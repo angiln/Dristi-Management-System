@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin: 50px auto;
+        max-width: 500px;
+        padding: 30px;
+        width:300px;
+      }
+      h1 {
+        margin-top: 0;
+        margin-left:0px;
+      
+        color:Skyblue;
+        text-align:center;
+        border-radius:20px;
+      
+    
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        background:whitesmoke;
+      }
+      button[type="submit"] {
+        background-color:whitesmoke;
+        border: none;
+        
+        border-radius:23px;
+        color:black;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        width: 40%;
+        margin-top:10px;
+        margin-left:10px;
+  
+      }
+      button[type="submit"]:hover {
+        background-color:Skyblue;
+        color:white;
+      }
+      .register-link {
+        text-align: center;
+        margin-top:-28px;
+        margin-left:100px;
+        
+      }
+      .register-link a {
+        color:white;
+        background:skyblue;
+        text-decoration: none;
+        border:1px solid white;
+        padding:10px;
+        border-radius:35px;
+        font:10px;
+      }
+      .form-check label{
+        font:10px arial sanserif;
+      
+
+      }
+      .fp{
+        margin-left:190px;
+        font-size:10px;
+      
+      }
+      .container p{
+        margin-left:10px;
+      }
+      .container img{
+        height:50px;
+        width:60px;
+       
+        margin-left:110px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <img src="glasses.gif">
+      <form method = "POST" action = "Loginvalidate.php"  id= "myForm">
+        <!-- <p class="text-center h3 fw-bold mb-5 mx-1 mx-md-4 mt-4">Please Login to Your account</p> -->
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+         Username:<br><br> <input type="text" name="username" id="username" placeholder="Enter Username" class="form-control form-control-md" />
+          
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+         Password:<br><br> <input type="password" name="pwd" id="pwd" placeholder="Enter Password" class="form-control form-control-md" />
+          
+        </div>
+
+        <div class="d-flex justify-content-around align-items-center mb-4">
+          <!-- Checkbox -->
+          <!-- <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+            <label class="form-check-label" for="form1Example3"> Remember me </label>
+          </div> -->
+          <a href="forgetPassword.php" class="fp">Forgot password?</a>
+        </div>
+        <button type="submit" name='login' class="btn btn-primary btn-sm btn-block">Sign in</button>
+        
+
+        <!-- Submit button -->
+        
+      <div class="register-link">
+        <a href="registrationPage.php">Register</a>
+      </div>
+    </div>
+  </body>
+</html>
